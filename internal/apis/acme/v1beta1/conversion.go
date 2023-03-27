@@ -33,3 +33,9 @@ func Convert_acme_ACMEIssuer_To_v1beta1_ACMEIssuer(in *acme.ACMEIssuer, out *ACM
 func Convert_v1beta1_ACMEIssuer_To_acme_ACMEIssuer(in *ACMEIssuer, out *acme.ACMEIssuer, s conversion.Scope) error {
 	return autoConvert_v1beta1_ACMEIssuer_To_acme_ACMEIssuer(in, out, s)
 }
+
+// Convert_acme_ACMEChallengeSolverHTTP01_To_v1beta1_ACMEChallengeSolverHTTP01 is explicitly defined to avoid issues in conversion-gen
+// when referencing types in other API groups.
+func Convert_acme_ACMEChallengeSolverHTTP01_To_v1beta1_ACMEChallengeSolverHTTP01(in *acme.ACMEChallengeSolverHTTP01, out *ACMEChallengeSolverHTTP01, s conversion.Scope) error {
+	return autoConvert_acme_ACMEChallengeSolverHTTP01_To_v1beta1_ACMEChallengeSolverHTTP01(in, out, s)
+}
